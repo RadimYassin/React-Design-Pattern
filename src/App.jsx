@@ -7,7 +7,7 @@ function App() {
   const LeftComponent=()=>{
     return <h1 style={{backgroundColor:"green"}}>left</h1>
   }
-  return (<SpliteScren>
+  return (<SpliteScren leftwith={3} rightwith={1}>
            <RightComponent/>
            <LeftComponent/>
          </SpliteScren>)
