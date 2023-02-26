@@ -1,3 +1,7 @@
+import SmallPersonistItem from "./person/SmallPersonistItem"
+import LargePersonistItem from "./person/LargePersonistItem"
+import RegulerList from "./RegulerList"
+
 //import SpliteScren from "./SpliteScren"
 const peaple= [
   {
@@ -58,7 +62,14 @@ function App() {
            <RightComponent/>
            <LeftComponent/>
   </SpliteScren>)*/}
-  return (<h1>hello</h1>)
+  return (<>
+
+                <RegulerList items={peaple} resourceName="person" ItemC={SmallPersonistItem} />
+                <RegulerList items={peaple} resourceName="person" ItemC={LargePersonistItem} />
+          
+  
+          </>)
 }
 
 export default App
+
