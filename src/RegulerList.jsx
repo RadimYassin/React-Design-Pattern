@@ -1,9 +1,15 @@
 
 
-export default function RegulerList() {
+export default function RegulerList({
+    items,
+    resourceName,
+    ItemC
+}) {
   return (
-    <div>
-      
-    </div>
+  <>
+     {
+        items.map((item,ind)=>(<ItemC key={ind} {...{[resourceName]:item}} />))
+     }
+  </>
   )
 }

@@ -6,7 +6,6 @@ export default function LargePersonistItem({person}) {
     <div>
          <p>
             name:{name}
-
          </p>
          <h1>age :{age}</h1>
          <p>hair:{hairColor}</p>
