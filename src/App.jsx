@@ -1,6 +1,8 @@
 import SmallPersonistItem from "./person/SmallPersonistItem"
 import LargePersonistItem from "./person/LargePersonistItem"
 import RegulerList from "./RegulerList"
+import NumberList from "./NumberList"
+import SmallProductlistItem from "./product/SmallProductlistItem"
 
 //import SpliteScren from "./SpliteScren"
 const peaple= [
@@ -66,10 +68,14 @@ function App() {
 
                 <RegulerList items={peaple} resourceName="person" ItemC={SmallPersonistItem} />
                 <RegulerList items={peaple} resourceName="person" ItemC={LargePersonistItem} />
-          
-  
+
+
+                <NumberList items={products} resourceName="product" ItemC={SmallProductlistItem} />
+                  
           </>)
 }
 
 export default App
+
+
 
