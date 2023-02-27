@@ -68,10 +68,12 @@ function App() {
 
                 <RegulerList items={peaple} resourceName="person" ItemC={SmallPersonistItem} />
                 <RegulerList items={peaple} resourceName="person" ItemC={LargePersonistItem} />
-                <NumberList items={products} resourceName="product" ItemC={SmallProductlistItem} />
-                  
+          
+  
           </>)
 }
 
 export default App
+
+
 
