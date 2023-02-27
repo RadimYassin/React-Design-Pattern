@@ -1,7 +1,7 @@
 import React from 'react'
 
 export default function LargProductlistItem({product}) {
-    const {name,price,dsc,rating}=product
+    const {name,price,dsc,rating}=product;
   return (
     <div>
         <p>{name}</p>
