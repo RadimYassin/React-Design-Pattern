@@ -11,7 +11,7 @@ export default function NumberList({
      {
         items.map((item,ind)=>(
         
-        <> <h1>{ind+1}</h1> <ItemC key={ind} {...{[resourceName]:item}} /></>
+        <div key={ind} > <ItemC key={ind} {...{[resourceName]:item}} /></div>
       
         
         

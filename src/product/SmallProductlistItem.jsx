@@ -1,6 +1,6 @@
 import React from 'react'
 
-const SmallProductlistItem = (product) => {
+const SmallProductlistItem = ({product}) => {
     const {name,price}=product
   return (
     <div>
