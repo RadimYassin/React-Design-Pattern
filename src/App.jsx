@@ -3,7 +3,7 @@ import LargePersonistItem from "./person/LargePersonistItem"
 import RegulerList from "./RegulerList"
 import NumberList from "./NumberList"
 import SmallProductlistItem from "./product/SmallProductlistItem"
-import Modals from "./Modals"
+import Modals from "./Modal"
 
 //import SpliteScren from "./SpliteScren"
 const peaple = [
