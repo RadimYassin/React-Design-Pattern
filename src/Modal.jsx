@@ -9,7 +9,7 @@ top:0;
 width:100%;
 height:100%;
 overflow:auto;
-background-color: #b91a1a35 ;
+background-color: #b91a1a ;
 `
 const ModalBody=styled.div`
 background-color:white;
