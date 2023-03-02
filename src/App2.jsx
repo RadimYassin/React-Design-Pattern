@@ -5,7 +5,7 @@ import ControlledModal from './Modals/ControlledModal'
 import UncontrolledForm from './UncontrolledForm'
 
 export default function App2() {
-    const [show,setShow]=useState(false)
+    const [show,setShow]=useState(false) 
     const onRequestClose=()=>{
         setShow(false)
     }
