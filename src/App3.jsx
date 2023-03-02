@@ -1,4 +1,6 @@
-import React from 'react'
+import React ,{useState} from 'react'
+import ControlledModal from './Modals/ControlledModal'
+import ControlledOnboardFlow from './OnboardFlow/ControlledOnboardFlow'
 import UncontrolledOnboardFlow from './OnboardFlow/UncontrolledOnboardFlow'
 const SetpOne =({goTonext})=>(
     <>
@@ -19,19 +21,23 @@ const SetpTree =({goTonext})=> (
      </>
 )
 function App3() {
+  const [onboardData,setOnboardData]=useState({})
+  const  [index,setIndex]=useState(0)
+  const onNext=(stepdata)=>{
+   setOnboardData({...onboardData,...stepdata})
+   setIndex(index+1)
+  }
   return (
     <div>
         HHH
-        <UncontrolledOnboardFlow onFinsh={data=>{console.log(data);
-             alert("onbrding complete")
-        
-        }}>
+        <ControlledOnboardFlow onNext={onNext} index={index}>
             <SetpOne/>
             <SetpTow/>
             <SetpTree/> 
-        </UncontrolledOnboardFlow>
+        </ControlledOnboardFlow>
     </div>
   )
 }
 
 export default App3
+
